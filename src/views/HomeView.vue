@@ -13,7 +13,8 @@
 
       return {
 
-        username: "Lone Wolf"
+        username: "Lone Wolf",
+        bio: "A big bad wolf in a giant forest."
       }
 
     }
