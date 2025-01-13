@@ -1,9 +1,21 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-</script>
-
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+
+
+  <section>
+    Hello Vue {{ username }}
+  </section>
 </template>
+
+<script>
+  export default {
+
+    data() {
+
+      return {
+
+        username: "Lone Wolf"
+      }
+
+    }
+  }
+</script>
