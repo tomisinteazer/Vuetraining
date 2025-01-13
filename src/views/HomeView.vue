@@ -10,7 +10,7 @@ export default {
   data() {
     return {
 
-      userName: "Very white man"
+      userName: "Very dark white man"
 
 
 
