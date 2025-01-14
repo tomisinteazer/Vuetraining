@@ -1,21 +1,24 @@
 <template>
 
+
   <section>
-    hello Vue {{ userName }}
+    Hello Vue {{ username }}
   </section>
 </template>
+
 <script>
-export default {
+  export default {
 
-  data() {
-    return {
+    data() {
 
-      userName: "Very dark white man"
+      return {
 
-
+        username: "Lone Wolf",
+        bio: "A big bad angry werewolf in a giant forest.",
+        color: ["red", "blue", "white", "yellow"]
+      }
 
     }
   }
-}
-
 </script>
+
