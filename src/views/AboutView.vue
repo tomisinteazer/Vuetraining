@@ -17,24 +17,11 @@
               </h2>
               <p class="mt-1">${{ item.price }}</p>
             </div>
-
-
           </div>
-
         </div>
-
-
-
-
-
-        <button class="bg-blue-500 px-8 py-4 text-black rounded my-4 font-bold" @click="pay">Payment </button>
-
-
-
+        <button class="bg-blue-500 px-8 py-4  rounded my-4 font-bold text-white" @click="pay">Payment
+        </button>
       </div>
-
-
-
 
     </section>
   </div>
@@ -46,10 +33,15 @@
 export default {
 
 
+  props: {
+    cart: Array,
+  },
+
+
   data() {
 
     return {
-      cart: []
+
     }
 
 
@@ -62,9 +54,11 @@ export default {
       alert("gbewa")
     }
   },
+
   mounted() {
-    this.getCart()
-  }
+    //this.getCart()
+  },
+
 }
 
 </script>
