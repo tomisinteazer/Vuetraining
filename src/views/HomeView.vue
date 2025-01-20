@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h1>Hello Vue {{ username }}</h1>
+    <!-- <h1>Hello Vue {{ username }}</h1> -->
 
     <section class="text-zinc-400 bg-zinc-900 body-font">
       <div class="container px-5 py-24 mx-auto">
@@ -66,13 +66,32 @@
         <button class="bg-green-500 px-8 py-4 text-black rounded my-4 font-bold" @click="checkout()">Checkout </button>
         <br>
 
-        <RouterLink to="/about">
+        <router-link :to="{ name: 'about', params: { cart: this.cart } }">
 
           <button class="bg-blue-500 px-8 py-4 text-black rounded my-4 font-bold">Payment </button>
 
-        </RouterLink>
+        </router-link>
+
+        <br>
+
+        <router-link :to="{ name: 'user', state: { name: this.username } }">
+
+          <button class="bg-red-600 px-8 py-4 text-black rounded my-4 font-bold">Get User </button>
+
+        </router-link>
 
       </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
