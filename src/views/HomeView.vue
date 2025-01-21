@@ -40,7 +40,7 @@
     <section class="text-zinc-400 bg-zinc-900 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
-          <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="item in cart" :key="item">
+          <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="(item, index) in cart" :key="item">
             <a class="block relative h-48 rounded overflow-hidden">
               <img alt="ecommerce" class="object-cover object-center w-full h-full block" :src="item.image" />
             </a>
@@ -55,7 +55,7 @@
             </div>
 
             <button class="bg-rose-800 px-8 py-2 text-black rounded my-4 font-bold"
-              @click="remove(item)">remove</button>
+              @click="remove(index)">remove</button>
           </div>
 
         </div>
@@ -152,7 +152,7 @@ export default {
 
     remove(item) {
 
-      this.cart.pop(item);
+      this.cart.splice(item, 1);
 
     }
 
