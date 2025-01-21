@@ -4,6 +4,10 @@
 
         <section class="text-zinc-300 bg-zinc-900 body-font">
             <div class="container px-5 py-24 mx-auto">
+
+                <h1 class="py-8 text-5xl  my-4 px-4 rounded-xl  bg-zinc-800  font-thin">
+                    Store
+                </h1>
                 <div class="flex flex-wrap -m-4">
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="(item, index) in goods" :key="item">
                         <a class="block relative h-48 rounded overflow-hidden">
@@ -29,7 +33,6 @@
 
                 <div>
 
-                    {{ total }}
                 </div>
 
 
@@ -45,16 +48,16 @@
 
 
         <section class="text-zinc-100  body-font ">
-            <div class="container px-5 bg-zinc-800 rounded-xl  mx-auto">
+            <div class="container p-4 mx-auto border border-zinc-600 rounded-xl ">
 
-                <h1 class="py-8">
+                <h1 class="py-8 text-5xl   px-4 rounded-xl  bg-zinc-800  font-thin">
                     Cart
                 </h1>
-                <div class="flex flex-wrap -m-4">
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full " v-for="(item, index) in store.cart" :key="item">
+                <div class="flex flex-wrap  ">
+                    <div class="lg:w-3/12 md:w-1/2 w-full px-2 my-4" v-for="(item, index) in store.cart" :key="item">
 
 
-                        <div class="border border-zinc-600 p-4 rounded-lg">
+                        <div class="bg-zinc-800 p-4 rounded-lg">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                                     :src="item.image" />
@@ -75,6 +78,12 @@
                     </div>
 
                 </div>
+
+
+                <h1 class=" text-white text-4xl bg-green-600 p-4 text-center rounded font-thin w-1/3 my-4"> Checkout [
+                    ${{ total }}
+                    ]
+                </h1>
 
 
 
@@ -141,6 +150,13 @@ export default {
 
                 },
 
+                {
+                    image: "https://sxdrv.com/images/med_5698c4e11a474.jpg",
+                    category: "Cars",
+                    name: "Ferrari Laferrari",
+                    price: 400000
+                }
+
 
 
             ],
@@ -154,29 +170,19 @@ export default {
         }
     },
     methods: {
-
-
         addToCart(item) {
 
             this.store.cart.push(item)
-
         },
-        checkout() {
 
-            localStorage.setItem("cart", JSON.stringify([...this.cart]))
-
-        },
         checkCart() {
-            console.log([...this.cart])
+            console.log([...this.store.cart])
 
         },
 
         remove(item) {
             console.log(item)
 
-
-
-            //this.store.cart.pop(item);
 
         }
 
