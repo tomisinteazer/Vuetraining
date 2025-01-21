@@ -5,6 +5,7 @@ import NotFound from '@/views/NotFound.vue'
 import Contact from '@/views/Contact.vue'
 import User from '@/views/User.vue'
 import HomeStore from '@/views/HomeStore.vue'
+import Checkout from '@/views/Checkout.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -29,6 +30,13 @@ const router = createRouter({
       path: '/contact',
       name: "contact",
       component:Contact,
+
+    },
+
+    {
+      path: '/checkout',
+      name: "checkout",
+      component:Checkout,
 
     },
 
