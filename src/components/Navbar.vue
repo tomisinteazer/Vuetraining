@@ -13,10 +13,10 @@
                     <span class="ml-3 text-xl">{{ title }} </span>
                 </a>
                 <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:text-white">First Link</a>
-                    <a class="mr-5 hover:text-white">Second Link</a>
-                    <a class="mr-5 hover:text-white">Third Link</a>
-                    <a class="mr-5 hover:text-white">Fourth Link</a>
+                    <router-link to="/" class="mr-5 hover:text-white">Home </router-link>
+                    <router-link to="/store" class="mr-5 hover:text-white">Store</router-link>
+                    <router-link to="/about" class="mr-5 hover:text-white">About</router-link>
+                    <router-link to="/contact" class="mr-5 hover:text-white">Contact</router-link>
                 </nav>
                 <button
                     class="inline-flex items-center bg-zinc-800 border-0 py-1 px-3 focus:outline-none hover:bg-zinc-700 rounded text-base mt-4 md:mt-0">Button
