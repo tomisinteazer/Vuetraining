@@ -1,7 +1,7 @@
 <template>
 
     <section>
-        <h1>
+        <h1 class="text-white text-5xl">
             my name is {{ name }}
         </h1>
     </section>
@@ -10,9 +10,6 @@
 
 
 export default {
-
-
-
     props: {
         name: String
     }

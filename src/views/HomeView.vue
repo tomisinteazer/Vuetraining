@@ -74,7 +74,7 @@
 
         <br>
 
-        <router-link :to="{ name: 'user', state: { name: this.username } }">
+        <router-link :to="{ name: 'user', params: { name: this.username } }">
 
           <button class="bg-red-600 px-8 py-4 text-black rounded my-4 font-bold">Get User </button>
 
