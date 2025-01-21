@@ -18,13 +18,13 @@
                     <router-link to="/about" class="mr-5 hover:text-white">About</router-link>
                     <router-link to="/contact" class="mr-5 hover:text-white">Contact</router-link>
                 </nav>
-                <button
-                    class="inline-flex items-center bg-zinc-800 border-0 py-1 px-3 focus:outline-none hover:bg-zinc-700 rounded text-base mt-4 md:mt-0">Button
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                        <path d="M5 12h14M12 5l7 7-7 7"></path>
-                    </svg>
-                </button>
+                <router-link to="/checkout"> <button
+                        class="inline-flex items-center bg-green-600 border-0 py-1 px-3 focus:outline-none hover:bg-zinc-700 rounded text-white mt-4 md:mt-0">Cart
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                            <path d="M5 12h14M12 5l7 7-7 7"></path>
+                        </svg>
+                    </button></router-link>
             </div>
         </header>
     </section>
