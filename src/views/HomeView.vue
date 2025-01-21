@@ -115,6 +115,13 @@ export default {
 
         },
 
+        {
+          image: "https://sxdrv.com/images/med_5698c4e11a474.jpg",
+          category: "Cars",
+          name: "Ferrari Laferrari",
+          price: 400000
+        }
+
 
 
       ],
