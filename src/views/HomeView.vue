@@ -1,7 +1,6 @@
 <template>
   <section>
     <!-- <h1>Hello Vue {{ username }}</h1> -->
-
     <section class="text-zinc-400 bg-zinc-900 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
@@ -66,13 +65,12 @@
         <button class="bg-green-500 px-8 py-4 text-black rounded my-4 font-bold" @click="checkout()">Checkout </button>
         <br>
 
-        <router-link :to="{ name: 'about', params: { cart: this.cart } }">
+        <RouterLink to="/about">
 
           <button class="bg-blue-500 px-8 py-4 text-black rounded my-4 font-bold">Payment </button>
 
-        </router-link>
+        </RouterLink>
 
-        <br>
 
         <router-link :to="{ name: 'user', params: { name: this.username } }">
 
@@ -81,17 +79,6 @@
         </router-link>
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -133,6 +120,13 @@ export default {
           price: 2000
 
         },
+
+        {
+          image: "https://sxdrv.com/images/med_5698c4e11a474.jpg",
+          category: "Cars",
+          name: "Ferrari Laferrari",
+          price: 400000
+        }
 
 
 
