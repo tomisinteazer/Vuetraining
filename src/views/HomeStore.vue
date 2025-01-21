@@ -181,7 +181,7 @@ export default {
         },
 
         remove(item) {
-            console.log(item)
+            this.store.cart.splice(item, 1);
 
 
         }
