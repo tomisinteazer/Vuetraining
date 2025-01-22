@@ -33,19 +33,17 @@
 export default {
 
 
-  props: {
-    cart: Array,
-  },
 
 
-  data() {
 
-    return {
-
-    }
+  data: () => ({
 
 
-  },
+    cart: []
+
+
+
+  }),
   methods: {
     getCart() {
       this.cart = JSON.parse(localStorage.getItem("cart"))
@@ -56,7 +54,7 @@ export default {
   },
 
   mounted() {
-    //this.getCart()
+    this.getCart()
   },
 
 }
