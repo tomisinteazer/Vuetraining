@@ -1,5 +1,13 @@
 <template>
     <section>
+
+
+
+
+
+
+
+
         <!-- <h1>Hello Vue {{ username }}</h1> -->
 
         <section class="text-zinc-300 bg-zinc-900 body-font">
@@ -25,7 +33,7 @@
                         </div>
 
                         <button class="bg-teal-500 px-8 py-2 text-black rounded my-4 font-bold"
-                            @click="addToCart(item)">Buy</button>
+                            @click="store.addToCart(item)">Buy</button>
                     </div>
 
                 </div>
@@ -68,7 +76,7 @@
                                     {{ item.name }} <span class=" px-4">${{ item.price }}</span>
 
                                     <button class="bg-rose-800 px-4 py-2 text-white font-light rounded "
-                                        @click="remove(index)">Remove</button>
+                                        @click="store.remove(index)">Remove</button>
                                 </h2>
 
                             </div>
@@ -81,7 +89,7 @@
 
 
                 <h1 class=" text-white text-4xl bg-green-600 p-4 text-center rounded font-thin w-1/3 my-4"> Checkout [
-                    ${{ total }}
+                    ${{ store.total }}
                     ]
                 </h1>
 
@@ -105,6 +113,9 @@
 
 
         </section>
+
+
+
     </section>
 </template>
 
@@ -124,7 +135,6 @@ export default {
             bio: "A big bad angry werewolf in a giant forest.",
             color: ["red", "blue", "white", "yellow"],
             goods: [
-
 
                 {
                     image: "https://www.edelholzverkauf.de/images/product_images/popup_images/39928_1.jpg.webp",
@@ -164,30 +174,7 @@ export default {
         };
     },
 
-    computed: {
-        total() {
-            return this.store.total
-        }
-    },
-    methods: {
-        addToCart(item) {
 
-            this.store.cart.push(item)
-        },
-
-        checkCart() {
-            console.log([...this.store.cart])
-
-        },
-
-        remove(item) {
-            this.store.cart.splice(item, 1);
-
-
-        }
-
-
-    },
 
 };
 </script>

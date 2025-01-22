@@ -1,8 +1,5 @@
 <template>
     <section>
-
-
-
         <section class="text-zinc-100  body-font my-12 ">
             <div class="container p-4 mx-auto border border-zinc-600 rounded-xl ">
 
@@ -23,8 +20,15 @@
                                 <h2 class=" title-font text-lg font-medium" :class="item">
                                     {{ item.name }} <span class=" px-4">${{ item.price }}</span>
 
-                                    <button class="bg-rose-800 px-4 py-2 text-white font-light rounded "
-                                        @click="remove(index)">Remove</button>
+                                    <button class="bg-rose-800  p-4 text-white font-light rounded-full "
+                                        @click="store.remove(index)">
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                                        </svg></button>
                                 </h2>
 
                             </div>
@@ -35,133 +39,25 @@
 
                 </div>
 
-
                 <h1 class=" text-white text-4xl bg-green-600 p-4 text-center rounded font-thin w-1/3 my-4"> Checkout [
-                    ${{ total }}
+                    ${{ store.total }}
                     ]
                 </h1>
 
-
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         </section>
     </section>
 </template>
 
 <script>
-
 import { useCartStore } from '@/stores/cart';
-
 export default {
-
-
-
     data() {
         return {
 
             store: useCartStore(),
-            username: "Lone Wolf",
-            bio: "A big bad angry werewolf in a giant forest.",
-            color: ["red", "blue", "white", "yellow"],
-            goods: [
-
-
-                {
-                    image: "https://www.edelholzverkauf.de/images/product_images/popup_images/39928_1.jpg.webp",
-                    category: "sex toys",
-                    name: "Vibra Max",
-                    price: 300
-
-                },
-
-                {
-                    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/DesertEagle_50AE.jpg/640px-DesertEagle_50AE.jpg",
-                    category: "weapon",
-                    name: "Desert Eagle",
-                    price: 1400
-
-                },
-
-                {
-                    image: "https://www.esports.net/wp-content/uploads/2024/03/ak117-COD-Mobile.jpg",
-                    category: "weapon",
-                    name: "assault rifle",
-                    price: 2000
-
-                },
-
-                {
-                    image: "https://sxdrv.com/images/med_5698c4e11a474.jpg",
-                    category: "Cars",
-                    name: "Ferrari Laferrari",
-                    price: 400000
-                }
-
-
-
-            ],
-            cart: []
         };
     },
-
-    computed: {
-        total() {
-            return this.store.total
-        }
-    },
-    methods: {
-        addToCart(item) {
-
-            this.store.cart.push(item)
-        },
-
-        checkCart() {
-            console.log([...this.store.cart])
-
-        },
-
-        remove(item) {
-            this.store.cart.splice(item, 1);
-
-
-        }
-
-
-    },
-
 };
 </script>
-
-<style>
-.red {
-    color: rgb(255, 82, 82)
-}
-
-.blue {
-    color: rgb(68, 130, 255);
-}
-
-.white {
-    color: rgb(255, 246, 235);
-}
-
-.yellow {
-    color: rgb(255, 221, 50)
-}
-</style>
