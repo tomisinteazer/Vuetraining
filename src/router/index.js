@@ -6,6 +6,7 @@ import Contact from '@/views/Contact.vue'
 import User from '@/views/User.vue'
 import HomeStore from '@/views/HomeStore.vue'
 import Checkout from '@/views/Checkout.vue'
+import Users from '@/views/Users.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -49,6 +50,12 @@ const router = createRouter({
       component:User,
       props:true
 
+    },
+    {
+
+      path:'/users', 
+      name:'users',
+      component:Users,
     },
     {
 
