@@ -16,7 +16,7 @@
                     <router-link to="/" class="mr-5 hover:text-white">Home </router-link>
                     <router-link to="/store" class="mr-5 hover:text-white">Store</router-link>
                     <router-link to="/about" class="mr-5 hover:text-white">About</router-link>
-                    <router-link to="/contact" class="mr-5 hover:text-white">Contact</router-link>
+                    <router-link to="/users" class="mr-5 hover:text-white">Users</router-link>
                 </nav>
                 <router-link to="/checkout"> <button
                         class="inline-flex items-center bg-green-600 border-0 py-1 px-3 focus:outline-none hover:bg-zinc-700 rounded text-white mt-4 md:mt-0">Cart
