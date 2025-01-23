@@ -1,8 +1,41 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <RouterView />
+
+  <section>
+
+
+    <navigationbar :title="siteName" />
+    <RouterView />
+  </section>
+
+
+
+
+
+
+
+
+
 </template>
+
+<script>
+import { RouterLink, RouterView } from 'vue-router'
+import Navbar from './components/Navbar.vue';
+
+
+export default {
+
+
+  data() {
+    return {
+
+      siteName: "Sambisa",
+
+    }
+  },
+
+  components: {
+    navigationbar: Navbar
+  }
+}
+
+</script>
