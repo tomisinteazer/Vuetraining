@@ -5,6 +5,9 @@
 
     <navigationbar :title="siteName" />
     <RouterView />
+    <Footer />
+
+
   </section>
 
 
@@ -22,6 +25,7 @@ import { RouterView } from 'vue-router'
 import Navbar from './components/Navbar.vue';
 import { useUsersStore } from './stores/users';
 import { useProductsStore } from './stores/products';
+import Footer from './components/Footer.vue';
 import { onBeforeMount, onMounted } from 'vue';
 
 
@@ -58,7 +62,8 @@ export default {
   },
 
   components: {
-    navigationbar: Navbar
+    navigationbar: Navbar,
+    Footer: Footer
   },
   mounted() {
 
