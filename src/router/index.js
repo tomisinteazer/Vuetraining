@@ -7,6 +7,7 @@ import User from '@/views/User.vue'
 import HomeStore from '@/views/HomeStore.vue'
 import Checkout from '@/views/Checkout.vue'
 import Users from '@/views/Users.vue'
+import HomeIndex from '@/views/HomeIndex.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -14,7 +15,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView,
+      component: HomeIndex,
       props:true,
     },
     {
