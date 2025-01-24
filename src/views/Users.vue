@@ -33,21 +33,21 @@
                         </div>
                         <div
                             class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-zinc-800 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                            <p class="leading-relaxed text-lg mb-4"> We want to express our deepest gratitude for your
+                            <div class="leading-relaxed text-lg mb-4"> We want to express our deepest gratitude for your
                                 invaluable support and trust in our services. Your unwavering commitment has been
                                 instrumental in our growth and success, and we are incredibly thankful to have you as
                                 one of our top clients.
 
-                            <div class="my-4"></div>
+                                <div class="my-4"></div>
 
-                            We remain dedicated to providing you with the highest level of service and innovation to
-                            meet your needs. Your feedback and continued partnership inspire us to strive for
-                            excellence every day.
-                            <div class="my-4"></div>
+                                We remain dedicated to providing you with the highest level of service and innovation to
+                                meet your needs. Your feedback and continued partnership inspire us to strive for
+                                excellence every day.
+                                <div class="my-4"></div>
 
-                            Thank you once again for your loyalty and trust. We look forward to serving you for many
-                            more successful years to come..
-                            </p>
+                                Thank you once again for your loyalty and trust. We look forward to serving you for many
+                                more successful years to come..
+                            </div>
                             <router-link to="/store" class="text-blue-400 inline-flex items-center"> Support us
                                 <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -97,7 +97,8 @@ export default {
         return {
             store: useUsersStore()
         }
-    }
+    },
+
 }
 
 </script>

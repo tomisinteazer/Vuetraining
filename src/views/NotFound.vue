@@ -6,7 +6,7 @@
             Oh sorry seems you are lost
         </h1>
         <router-link to="/">
-            <button class="bg-green-700 text-3xl text-white p-4 my-8 rounded"> Back Home</button>
+            <button class="bg-green-700 lg:text-3xl text-xl text-white p-4 my-8 rounded"> Back Home</button>
         </router-link>
     </section>
 </template>
