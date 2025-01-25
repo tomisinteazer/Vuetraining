@@ -1,7 +1,7 @@
 <template>
   <div class="about">
 
-    <section class="text-zinc-400 bg-zinc-900 body-font">
+    <section class="text-zinc-400 bg-zinc-950 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="item in cart" :key="item">
@@ -19,7 +19,7 @@
             </div>
           </div>
         </div>
-        <button class="bg-blue-500 px-8 py-4  rounded my-4 font-bold text-white" @click="pay">Payment
+        <button class="bg-green-500 px-8 py-4  rounded my-4 font-bold text-white" @click="pay">Payment
         </button>
       </div>
 

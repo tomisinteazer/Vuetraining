@@ -1,12 +1,12 @@
 <template>
-    <footer class="text-zinc-400 bg-zinc-900 body-font mt-8">
-        <div class=" container border-zinc-600 border mx-auto rounded-xl p-2">
-            <div class="px-5 py-4  bg-zinc-800 rounded flex items-center sm:flex-row flex-col">
+    <footer class="text-zinc-400 bg-zinc-950 body-font mt-8">
+        <div class=" container border-zinc-700 border mx-auto rounded-xl p-2">
+            <div class="px-5 py-4  bg-zinc-900 rounded flex items-center sm:flex-row flex-col">
                 <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
 
-                    <span class=" text-green-400 font-bold text-2xl p-2 rounded-lg">SOL✤STORE</span>
+                    <span class=" text-green-500 font-bold text-2xl p-2 rounded-lg">SOL✤STORE</span>
                 </a>
-                <p class="text-sm text-zinc-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-zinc-800 sm:py-2 sm:mt-0 mt-4">©
+                <p class="text-sm text-zinc-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-zinc-900 sm:py-2 sm:mt-0 mt-4">©
                     2025
                     SOL✤STORE —
                     <a href="https://twitter.com/tomisinteazer" class="text-zinc-500 ml-1" target="_blank"

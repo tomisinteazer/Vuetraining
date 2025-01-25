@@ -10,10 +10,10 @@
 
         <!-- <h1>Hello Vue {{ username }}</h1> -->
 
-        <section class="text-zinc-300 bg-zinc-900 body-font my-12">
-            <div class="container p-4 border rounded-xl border-zinc-600 mx-auto">
+        <section class="text-zinc-300 bg-zinc-950 body-font my-12">
+            <div class="container p-4 border rounded-xl border-zinc-700 mx-auto">
 
-                <h1 class="py-8 lg:text-3xl text-xl   px-4 rounded-xl  bg-zinc-800  font-thin">
+                <h1 class="py-8 lg:text-3xl text-xl   px-4 rounded-xl  bg-zinc-900  font-thin">
                     [ Products ◉ Goods ◉ Services ]
                 </h1>
                 <div class="flex flex-wrap ">
@@ -56,16 +56,16 @@
 
 
         <section class="text-zinc-100  body-font ">
-            <div class="container p-4 mx-auto border border-zinc-600 rounded-xl ">
+            <div class="container p-4 mx-auto border border-zinc-700 rounded-xl ">
 
-                <h1 class="py-8 lg:text-3xl text-xl   px-4 rounded-xl  bg-zinc-800  font-thin">
+                <h1 class="py-8 lg:text-3xl text-xl   px-4 rounded-xl  bg-zinc-900  font-thin">
                     [ Your premium selections. ]
                 </h1>
                 <div class="flex flex-wrap  ">
                     <div class="lg:w-3/12 md:w-1/2 w-full px-2 my-4" v-for="(item, index) in store.cart" :key="item">
 
 
-                        <div class="bg-zinc-800 p-4 rounded-lg">
+                        <div class="bg-zinc-900 p-4 rounded-lg">
                             <a class="block relative h-48 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                                     :src="item.image" />

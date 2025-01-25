@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- <h1>Hello Vue {{ username }}</h1> -->
-    <section class="text-zinc-400 bg-zinc-900 body-font">
+    <section class="text-zinc-400 bg-zinc-950 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="item in goods" :key="item">
@@ -26,7 +26,7 @@
 
 
 
-        <button class="bg-blue-500 px-8 py-4 text-black rounded my-4 font-bold" @click="checkCart()">Checkout <span
+        <button class="bg-green-500 px-8 py-4 text-black rounded my-4 font-bold" @click="checkCart()">Checkout <span
             class="bg-red-600 p-2 text-white rounded-xl">{{ cart.length }}</span></button>
 
       </div>
@@ -37,7 +37,7 @@
     </section>
 
 
-    <section class="text-zinc-400 bg-zinc-900 body-font">
+    <section class="text-zinc-400 bg-zinc-950 body-font">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap -m-4">
           <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="(item, index) in cart" :key="item">
@@ -67,7 +67,7 @@
 
         <RouterLink to="/about">
 
-          <button class="bg-blue-500 px-8 py-4 text-black rounded my-4 font-bold">Payment </button>
+          <button class="bg-green-500 px-8 py-4 text-black rounded my-4 font-bold">Payment </button>
 
         </RouterLink>
 
