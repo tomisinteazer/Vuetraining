@@ -187,15 +187,17 @@
                     class=" flex flex-wrap border-t border-b border-zinc-800 py-20  px-5 my-16 mx-auto items-center justify-evenly">
 
                     <div class="md:w-1/3 md:pr-12 md:py-8  md:mb-0 mb-10 pb-10">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"> Sign up with us your
-                            account is waiting.
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"> Discover the best
+                            products for you.
                         </h1>
-                        <p class="leading-relaxed text-base">Setting up your account allows you to track
-                            your orders in real time, save your favorite items, and securely store your payment and
-                            shipping details for faster checkouts. It also gives you access to exclusive discounts,
-                            personalized recommendations, and early notifications about sales and new arrivals.
-                            Additionally, having an account enables you to manage returns easily, review your purchase
-                            history, and enjoy a seamless, tailored shopping experience.</p>
+                        <p class="leading-relaxed text-base">
+                            Our team of experts has curated a selection of the best products from around the world to
+                            suit your needs and preferences. Whether you're looking for the latest fashion trends, the
+                            most innovative gadgets, or the most effective beauty products, we've got you covered. With
+                            our easy-to-use search and filter tools, you can find exactly what you're looking for in no
+                            time. Plus, our personalized recommendations will help you discover new products that you'll
+                            love.
+                        </p>
                         <a class="text-green-400 inline-flex items-center mt-4">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
@@ -260,21 +262,83 @@
 
                     </div>
                     <div class="md:w-1/2 md:pr-12 md:py-8  md:mb-0 mb-10 pb-10">
-                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"> Sign up with us your
-                            account is waiting.
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+
+                            Add products to your cart.
+
+
                         </h1>
-                        <p class="leading-relaxed text-base">Setting up your account allows you to track
-                            your orders in real time, save your favorite items, and securely store your payment and
-                            shipping details for faster checkouts. It also gives you access to exclusive discounts,
-                            personalized recommendations, and early notifications about sales and new arrivals.
-                            Additionally, having an account enables you to manage returns easily, review your purchase
-                            history, and enjoy a seamless, tailored shopping experience.</p>
+                        <p class="leading-relaxed text-base">
+                            Once you've found the products you want, simply add them to your cart by clicking the [Add
+                            to
+                            Cart] button. You can add multiple items to your cart and adjust the quantity as needed.
+                            When
+                            you're ready to check out, click the shopping cart icon in the top right corner of the page
+                            to
+                            review your order. From there, you can proceed to checkout, where you'll enter your shipping
+                            and payment information. Once your order is confirmed, you'll receive an email with your
+                            order
+                            details and tracking information.
+
+                        </p>
                         <a class="text-green-400 inline-flex items-center mt-4">Learn More
                             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                 stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
                                 <path d="M5 12h14M12 5l7 7-7 7"></path>
                             </svg>
                         </a>
+                    </div>
+
+                </div>
+
+                <!-- step4 -->
+
+                <div
+                    class=" flex flex-wrap border-t border-zinc-800 py-20  px-5 my-16 mx-auto items-center justify-evenly">
+
+                    <div class="md:w-1/3 md:pr-12 md:py-8  md:mb-0 mb-10 pb-10">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
+
+                            Blockchain empowered checkout.
+                        </h1>
+                        <p class="leading-relaxed text-base">
+                            Our blockchain-powered checkout process ensures that your transactions are secure and
+                            transparent. By using blockchain technology, we can verify the authenticity of each
+                            transaction and ensure that your payment information is protected. This technology also
+                            enables us to offer faster processing times and lower fees, so you can enjoy a seamless
+                            shopping experience without any hidden costs. Plus, with blockchain, you can track your
+                            order in real time and see exactly where your products are at all times.
+                        </p>
+                        <a class="text-green-400 inline-flex items-center mt-4">Learn More
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="flex flex-col md:w-1/3 md:pl-12 p-8">
+
+                        <svg viewBox="0 0 719 680" fill="none" class="h-full">
+                            <g clip-path="url(#:S3:-clip)" class="group">
+                                <g
+                                    class="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
+                                    <foreignObject width="719" height="680"><img alt="" loading="lazy" width="2400"
+                                            height="1600" decoding="async" data-nimg="1"
+                                            class="w-full bg-neutral-100 object-cover"
+                                            sizes="(min-width: 1024px) 41rem, 31rem"
+                                            src="https://bringatrailer.com/wp-content/uploads/2023/11/2021_mercedes-amg_s63-coupe_2021_mercedes-amg_s63-coupe_5542fc46-7c24-4f9f-8d02-7de878ab1430-4xVMdy-25530-25531-scaled.jpg"
+                                            style="color: transparent; aspect-ratio: 719 / 680;"></foreignObject>
+                                </g>
+                                <use href="#:S3:-shape" stroke-width="2" class="stroke-neutral-950/10"></use>
+                            </g>
+                            <defs>
+                                <clipPath id=":S3:-clip">
+                                    <path id=":S3:-shape"
+                                        d="M632.827 9.245A11.5 11.5 0 0 1 644.104 0h63.366c7.257 0 12.7 6.64 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 681.87 151h-28.275a15.999 15.999 0 0 0-15.689 12.862l-95.832 479.159c-4.3 21.502-23.18 36.979-45.107 36.979H178.502c-29.028 0-50.8-26.557-45.107-55.021l102.4-512C240.096 91.477 258.975 76 280.902 76h318.465c10.136 0 21.179-5.35 23.167-15.288l10.293-51.467Zm0 479A11.5 11.5 0 0 1 644.104 479h63.366c7.257 0 12.7 6.639 11.277 13.755l-25.6 128A11.5 11.5 0 0 1 681.87 630h-63.366c-7.257 0-12.7-6.639-11.277-13.755l25.6-128ZM37.104 159a11.5 11.5 0 0 0-11.277 9.245l-25.6 128C-1.196 303.361 4.247 310 11.504 310H74.87a11.5 11.5 0 0 0 11.277-9.245l24.76-123.798a.03.03 0 0 1 .052-.012c.015.021.048.012.052-.014C114.016 158.98 120.134 151 143 151h58.87a11.5 11.5 0 0 0 11.277-9.245l25.6-128C240.17 6.64 234.727 0 227.47 0h-63.366a11.5 11.5 0 0 0-11.277 9.245l-24.754 123.771c-.002.011-.016.015-.024.006-.007-.009-.021-.005-.023.007-3.469 18.452-13.551 25.107-24.88 25.981-.848.065-1.699 0-2.549-.009l-.127-.001H37.104Z"
+                                        fill-rule="evenodd" clip-rule="evenodd"></path>
+                                </clipPath>
+                            </defs>
+                        </svg>
                     </div>
 
                 </div>
