@@ -6,7 +6,7 @@
             <div class="container px-5 py-24 mx-auto flex flex-col">
                 <div class="flex justify-center items-center">
                     <h1
-                        class="py-8 text-5xl align-center justify-center text-zinc-900 w-1/2  my-4 px-4 rounded-xl text-center bg-amber-400  font-thin">
+                        class="py-8 text-5xl align-center justify-center text-zinc-900 md:w-1/2 w-full my-4 px-4 rounded-xl text-center bg-amber-400  font-thin">
                         Top Contributor.
                     </h1>
                 </div>
@@ -24,7 +24,7 @@
                             <div class="flex flex-col items-center text-center justify-center">
                                 <h2 class="font-medium title-font mt-4 text-white text-lg">{{
                                     store.highestPayingClient.username
-                                }}</h2>
+                                    }}</h2>
                                 <div class="w-12 h-1 bg-amber-500  rounded mt-2 mb-4"></div>
                                 <p class="p-4 w-8/12 font-thin rounded border border-zinc-700 border-dashed text-white">
                                     {{

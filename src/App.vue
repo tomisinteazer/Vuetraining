@@ -102,9 +102,12 @@ style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-lineca
     </div>
 
 
-    <section v-else>
+    <section v-else class="fade-in-left">
       <navigationbar :title="siteName" />
-      <RouterView />
+      <transition name="slide-fade">
+        <RouterView />
+      </transition>
+
       <Footer />
     </section>
 
@@ -159,7 +162,7 @@ export default {
     return {
 
       siteName: "Sol✤store",
-      loading: false
+      loading: true
 
     }
   },
@@ -192,6 +195,38 @@ body {
 
 }
 
+
+
+
+.slide-fade-enter-active {
+  transition: all 0.5s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.5s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-in-out forwards;
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
 body {
   margin: 0;

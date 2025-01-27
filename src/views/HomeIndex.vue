@@ -146,7 +146,7 @@
                                             height="3000" decoding="async" data-nimg="1"
                                             class="w-full bg-neutral-100 object-cover"
                                             sizes="(min-width: 1024px) 41rem, 31rem"
-                                            src="https://sxdrv.com/images/med_5698c4e11a474.jpg"
+                                            src="https://thecollectorscircle.com/wp-content/uploads/2022/01/Ferrari-LaFerrari-in-White-1.jpg"
                                             style="color: transparent; aspect-ratio: 719 / 680;"></foreignObject>
                                 </g>
                                 <use href="#:S2:-shape" stroke-width="2" class="stroke-neutral-950/10"></use>
@@ -186,7 +186,7 @@
                 <div
                     class=" flex flex-wrap border-t border-b border-zinc-800 py-20  px-5 my-16 mx-auto items-center justify-evenly">
 
-                    <div class="md:w-1/3 md:pr-12 md:py-8  md:mb-0 mb-10 pb-10">
+                    <div class="md:w-5/12 md:pr-12 md:py-8  md:mb-0 mb-10 pb-10">
                         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white"> Discover the best
                             products for you.
                         </h1>
@@ -211,12 +211,14 @@
                             <g clip-path="url(#:S3:-clip)" class="group">
                                 <g
                                     class="origin-center scale-100 transition duration-500 motion-safe:group-hover:scale-105">
-                                    <foreignObject width="719" height="680"><img alt="" loading="lazy" width="2400"
+                                    <foreignObject width="719" height="680"><img loading="lazy" width="2400"
                                             height="1600" decoding="async" data-nimg="1"
                                             class="w-full bg-neutral-100 object-cover"
                                             sizes="(min-width: 1024px) 41rem, 31rem"
-                                            src="https://bringatrailer.com/wp-content/uploads/2023/11/2021_mercedes-amg_s63-coupe_2021_mercedes-amg_s63-coupe_5542fc46-7c24-4f9f-8d02-7de878ab1430-4xVMdy-25530-25531-scaled.jpg"
-                                            style="color: transparent; aspect-ratio: 719 / 680;"></foreignObject>
+                                            src="https://cdn.motor1.com/images/mgl/g40OZP/s1/1x1/2015-porsche-918-spyder.webp"
+                                            alt="https://all-andorra.com/wp-content/uploads/2019/07/Porsche-991-GT3-RS-white.jpg"
+                                            style="color: transparent; aspect-ratio: 719 / 680; transform: scaleX(-1);">
+                                    </foreignObject>
                                 </g>
                                 <use href="#:S3:-shape" stroke-width="2" class="stroke-neutral-950/10"></use>
                             </g>
@@ -246,7 +248,7 @@
                                             height="3000" decoding="async" data-nimg="1"
                                             class="w-full bg-neutral-100 object-cover"
                                             sizes="(min-width: 1024px) 41rem, 31rem"
-                                            src="https://images.t-online.de/2021/09/74148740v2/0x0:920x517/fit-in/920x0/edles-geschoss-die-tuning-firma-mansory-hat-dem-mercedes-benz-s63-amg-zwei-leistungs-kits-verpasst-eines-davon-sorgt-fuer-720-ps-das-andere-sogar-fuer-900-ps.jpg"
+                                            src="https://i.pinimg.com/736x/ab/f3/8b/abf38b897d24dbe761efcbcc5df1237e.jpg"
                                             style="color: transparent; aspect-ratio: 719 / 680;"></foreignObject>
                                 </g>
                                 <use href="#:S2:-shape" stroke-width="2" class="stroke-neutral-950/10"></use>
@@ -294,9 +296,9 @@
                 <!-- step4 -->
 
                 <div
-                    class=" flex flex-wrap border-t border-zinc-800 py-20  px-5 my-16 mx-auto items-center justify-evenly">
+                    class=" flex flex-wrap border-t border-zinc-800 py-20  px-5 mt-16 mx-auto items-center justify-evenly">
 
-                    <div class="md:w-1/3 md:pr-12 md:py-8  md:mb-0 mb-10 pb-10">
+                    <div class="md:w-5/12 md:pr-12 md:py-8  md:mb-0 mb-10 pb-10">
                         <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">
 
                             Blockchain empowered checkout.
@@ -326,7 +328,7 @@
                                             height="1600" decoding="async" data-nimg="1"
                                             class="w-full bg-neutral-100 object-cover"
                                             sizes="(min-width: 1024px) 41rem, 31rem"
-                                            src="https://bringatrailer.com/wp-content/uploads/2023/11/2021_mercedes-amg_s63-coupe_2021_mercedes-amg_s63-coupe_5542fc46-7c24-4f9f-8d02-7de878ab1430-4xVMdy-25530-25531-scaled.jpg"
+                                            src="https://imgd.aeplcdn.com/1056x594/n/pu7b6sa_1475175.jpg?q=80"
                                             style="color: transparent; aspect-ratio: 719 / 680;"></foreignObject>
                                 </g>
                                 <use href="#:S3:-shape" stroke-width="2" class="stroke-neutral-950/10"></use>
@@ -427,8 +429,12 @@
 @keyframes wiggle {
 
     0%,
+
+
+
     100% {
-        transform: rotate(-2deg) scale(1.05);
+        /* transform: rotate(-2deg) scale(1.05); */
+        transform: translateY(0em);
 
 
     }
@@ -436,8 +442,12 @@
 
     50% {
 
-        transform: rotate(2deg) scale(1.15);
+        transform: translateY(2rem)
+            /* transform: rotate(2deg) scale(1.15); */
     }
+
+
+
 
 
 
