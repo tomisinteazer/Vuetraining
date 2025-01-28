@@ -17,11 +17,19 @@
                         <router-link to="/users" class="mr-5 hover:text-white">Users</router-link>
                     </nav>
                     <router-link to="/checkout"> <button
-                            class="inline-flex items-center bg-green-600 border-0 py-1 px-3 focus:outline-none hover:bg-amber-500 hover:text-zinc-950 rounded text-white mt-4 md:mt-0">Cart
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                            class="inline-flex items-center  bg-green-600 border-0 py-1 px-3 focus:outline-none hover:bg-amber-500 hover:text-zinc-950 rounded text-white mt-4 md:mt-0">
+
+                            <span class="text-white rounded-full bg-zinc-950 px-2 py-1">{{ store.cart.length }}</span>
+                            <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M2.83179 4.38657H3.34341C4.20256 4.38657 4.96125 4.94691 5.21392 5.76808L8.27786 15.7259C8.53053 16.547 9.28921 17.1074 10.1484 17.1074H17.1114C17.9373 17.1074 18.6743 16.5889 18.9534 15.8116L20.9925 10.1312C21.679 8.21867 20.2616 6.20383 18.2295 6.20383H10.66"
+                                    stroke="#ffffff" stroke-width="1.7" stroke-linecap="round" />
+                                <circle cx="10.1707" cy="20.5322" r="1.46779" fill="#ffffff" />
+                                <circle cx="17.0204" cy="20.5322" r="1.46779" fill="#ffffff" />
                             </svg>
+
+
                         </button>
                     </router-link>
                 </div>
@@ -33,11 +41,18 @@
 
 <script>
 
+import { useCartStore } from '@/stores/cart';
+
 export default {
 
     props: {
         title: String
-    }
+    },
+    data() {
+        return {
+            store: useCartStore()
+        }
+    },
 
 
 }
