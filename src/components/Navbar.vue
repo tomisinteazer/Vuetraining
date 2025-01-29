@@ -19,7 +19,8 @@
                     <router-link to="/checkout"> <button
                             class="inline-flex items-center  bg-green-600 border-0 py-1 px-3 focus:outline-none hover:bg-amber-500 hover:text-zinc-950 rounded text-white mt-4 md:mt-0">
 
-                            <span class="text-white rounded-full bg-zinc-950 px-2 py-1">{{ store.cart.length }}</span>
+                            <span class="text-white rounded-full bg-zinc-950 px-3 py-1" v-if="store.cart.length">{{
+                                store.cart.length }}</span>
                             <svg width="32px" height="32px" viewBox="0 0 24 24" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
