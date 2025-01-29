@@ -10,6 +10,23 @@
 
         <!-- <h1>Hello Vue {{ username }}</h1> -->
 
+        <section>
+            <div class="bg-gray-50"><button class="bg-blue-600 text-white my-6 px-8 py-4">Ethereum</button>
+                <div class="flex w-full items-end justify-center py-10">
+                    <div class="relative w-3/4 text-left md:w-full lg:w-full xl:w-1/2"><label for="hero-field"
+                            class="pl-3 text-sm leading-7 text-blue-600"> Search (Token Name or Contract) </label><input
+                            type="text" id="hero-field" name="hero-field"
+                            class="w-full rounded-full border border-gray-300 bg-gray-100 bg-opacity-50 py-2 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-600 focus:bg-white focus:ring-1 focus:ring-blue-100">
+                    </div>
+                </div>
+                <section class="body-font text-gray-600">
+                    <div class="container mx-auto px-5 py-12 text-center">
+                        <div class="m-4 flex flex-wrap"></div>
+                    </div>
+                </section>
+            </div>
+        </section>
+
         <section class="text-zinc-300 bg-zinc-950 body-font my-12">
             <div class="container p-4 border rounded-xl border-zinc-700 mx-auto">
 
