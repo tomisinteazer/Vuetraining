@@ -16,6 +16,14 @@
                         <router-link to="/about" class="mr-5 hover:text-white">About</router-link>
                         <router-link to="/users" class="mr-5 hover:text-white">Users</router-link>
                     </nav>
+
+                    <div class="flex md:hidden"><button type="button"
+                            class="text-gray-500 hover:text-gray-600 focus:text-gray-600 focus:outline-none"
+                            aria-label="toggle menu"><svg viewBox="0 0 24 24" class="h-6 w-6 fill-current">
+                                <path fill-rule="evenodd"
+                                    d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                                </path>
+                            </svg></button></div>
                     <router-link to="/checkout"> <button
                             class="inline-flex items-center  bg-green-600 border-0 py-1 px-3 focus:outline-none hover:bg-amber-500 hover:text-zinc-950 rounded text-white mt-4 md:mt-0">
 
