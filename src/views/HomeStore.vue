@@ -26,8 +26,10 @@
 
         <transition name="fade">
             <div v-if="isModalVisible">
-                <div @click="onToggle" class="absolute opacity-70 bg-zinc-950 backdrop-blur-lg inset-0 z-10"></div>
-                <div class="w-full  p-3 relative mx-auto my-auto rounded-xl shadow-lg  z-50">
+                <div @click="onToggle"
+                    class="ixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex justify-center items-center z-50">
+                </div>
+                <div class="w-full  p-3 relative  rounded-xl shadow-lg  z-50">
                     <section class="text-zinc-400  body-font overflow-hidden my-8">
                         <div class="container px-5  border border-zinc-700 rounded-3xl py-24 mx-auto">
                             <div class="lg:w-4/5 mx-auto flex flex-wrap">
