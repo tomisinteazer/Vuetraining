@@ -1,10 +1,7 @@
 <template>
 
   <section>
-
-
     <div v-if="loading">
-
       <svg width="100" height="100" class="thissvg" viewBox="0 0 100 100">
         <defs>
           <mask id="thinkMask" width="100" height="100" style="position: absolute;">
@@ -100,28 +97,16 @@ d="m 67.2,58.979615 c 0,0 -5.195345,18.056477 -20.4,18.056477 -15.204655,0 -20.4
 style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" /-->
       </svg>
     </div>
-
-
     <section v-else class="fade-in-left">
       <navigationbar :title="siteName" />
       <transition name="slide-fade">
-        <RouterView />
+
       </transition>
 
+      <RouterView />
       <Footer />
     </section>
-
-
   </section>
-
-
-
-
-
-
-
-
-
 </template>
 
 <script>
