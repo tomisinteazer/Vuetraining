@@ -12,9 +12,9 @@ export let useProductsStore = defineStore("productsStore", {
             let finalData = [];
             this.loading =  true
             try {
-                const response = await fetch('https://vuetraining-products.tomisinteazer.workers.dev/')
+                const response = await fetch('https://vuetraining-singleproduct.tomisinteazer.workers.dev')
                 if (!response.ok) {
-                    console.log('Failed to fetch users.', data);
+                    console.log('Failed to fetch data.');
                 }
                 finalData = await response.json();
             } catch (error) {
