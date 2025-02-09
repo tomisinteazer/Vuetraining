@@ -1,15 +1,15 @@
 import { defineStore } from "pinia";
 
-export let useProductsStore = defineStore("productsStore", {
+export let useProductStore = defineStore("productStore", {
     state(){
         return{
-            products:[],
+            product:{},
             loading:false,
         }
     },
     actions:{
         async fetchProducts() {
-            let finalData = [];
+            let finalData;
             this.loading =  true
             try {
                 const response = await fetch('https://vuetraining-singleproduct.tomisinteazer.workers.dev')
@@ -21,7 +21,7 @@ export let useProductsStore = defineStore("productsStore", {
                 console.error("the error is ",error.message)
 
             } finally {
-             this.products =finalData.goods
+             this.products = finalData
              this.loading = false
          
             }
