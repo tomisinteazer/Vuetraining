@@ -101,9 +101,10 @@ style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-lineca
       <navigationbar :title="siteName" />
       <transition name="slide-fade">
 
+        <RouterView />
+
       </transition>
 
-      <RouterView />
       <Footer />
     </section>
   </section>
