@@ -16,14 +16,12 @@
                     <div class="relative  text-left md:w-full lg:w-full xl:w-3/4"><label for="hero-field"
                             class="pl-3 text-sm leading-7 text-green-600"> Search Products
                         </label><input type="text"
-                            class="w-full rounded-lg border border-zinc-600 bg-zinc-800 bg-opacity-50 py-2 px-3 text-base leading-8 text-zinc-700 outline-none transition-colors duration-200 ease-in-out focus:border-green-600 focus:bg-black focus:ring-1 focus:ring-green-600">
+                            class="w-full rounded-lg border border-zinc-600 bg-zinc-900 bg-opacity-50 py-2 px-3 text-base leading-8 text-zinc-700 outline-none transition-colors duration-200 ease-in-out focus:border-green-600 focus:bg-black focus:ring-1 focus:ring-green-600">
                     </div>
                 </div>
 
             </div>
         </section>
-
-
 
         <section class="text-zinc-300 bg-zinc-950 body-font my-12">
             <div class="container p-4 border rounded-xl border-zinc-700 mx-auto">
@@ -34,7 +32,7 @@
                     <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="(item, index) in goods.products" :key="item">
                         <a class="block relative h-48 rounded overflow-hidden">
                             <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-                                @click="modal.openModal()" :src="item.image" />
+                                @click="loadModal()" :src="item.image" />
                         </a>
                         <div class="mt-4">
                             <h3 class="text-zinc-500 text-xs tracking-widest title-font mb-1">
@@ -67,11 +65,6 @@
 
 
         </section>
-
-
-
-
-
 
         <section class="text-zinc-100  body-font ">
             <div class="container p-4 mx-auto border border-zinc-700 rounded-xl ">
@@ -150,14 +143,7 @@
 
         </section>
 
-
-
-
-
         <Modal />
-
-
-
 
 
     </section>
@@ -169,12 +155,14 @@ import { useModalStore } from '@/stores/modalStore';
 import Modal from '../components/Modal.vue';
 import { useCartStore } from '@/stores/cart';
 import { useProductsStore } from '@/stores/products';
+import { useProductStore } from '@/stores/productStore';
 
 export default {
     data() {
         return {
 
             store: useCartStore(),
+            product: useProductStore(),
             username: "Lone Wolf",
             bio: "A big bad angry werewolf in a giant forest.",
             color: ["red", "blue", "white", "yellow"],
@@ -197,6 +185,11 @@ export default {
     methods: {
         onToggle() {
             this.isOpen = !this.isOpen;
+        },
+        loadModal() {
+            this.product.fetchProduct()
+            this.modal.openModal()
+
         }
     }
 };

@@ -14,10 +14,10 @@
                         <div class="container bg-zinc-950 lg:w-4/5 rounded-3xl p-4 mx-auto">
                             <div class="p-5 rounded-xl border border-zinc-600 flex flex-wrap">
                                 <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
-                                    <h2 class="text-sm title-font text-zinc-500 tracking-widest">SoundTech</h2>
-                                    <h1 class="text-white text-3xl title-font font-medium mb-4">Wireless
-                                        Noise-Canceling
-                                        Headphones
+                                    <h2 class="text-sm title-font text-zinc-500 tracking-widest">{{
+                                        product.product.brand }}</h2>
+                                    <h1 class="text-white text-3xl title-font font-medium mb-4">
+                                        {{ product.product.name }}
                                     </h1>
                                     <div class="flex mb-4">
                                         <span class="flex items-center">
@@ -70,15 +70,13 @@
 
                                     </div>
                                     <div v-if="!review">
-                                        <p class="leading-relaxed mb-4">High-quality over-ear headphones with active
-                                            noise-canceling
-                                            technology, 30-hour battery life, and Bluetooth connectivity.</p>
+                                        <p class="leading-relaxed mb-4">{{ product.product.description }}</p>
                                         <div class="flex border-t border-zinc-800 py-2">
                                             <span class="text-zinc-500">Color</span>
                                             <span class="ml-auto text-white">Blue</span>
                                         </div>
                                         <div class="flex border-t border-zinc-800 py-2"
-                                            v-for=" (value, key) in specifications" :key="value">
+                                            v-for=" (value, key) in product.product.specifications" :key="value">
                                             <span class="text-zinc-500">{{ key }}</span>
                                             <span class="ml-auto text-white">{{ value }}</span>
                                         </div>
@@ -90,7 +88,8 @@
                                             <span class="ml-auto text-white">4</span>
                                         </div>
                                         <div class="flex">
-                                            <span class="title-font font-medium text-2xl text-white">$58.00</span>
+                                            <span class="title-font font-medium text-2xl text-white">${{
+                                                product.product.price }}</span>
                                             <button
                                                 class="flex ml-auto text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Add
                                                 to Cart</button>
@@ -106,9 +105,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                <img alt="ecommerce"
+                                <img alt="ecommerce" v-if="product.product.images"
+                                    class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-xl"
+                                    :src="product.product.images[0]">
+                                <img alt="ecommerce" v-if="!product.product.images"
                                     class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded-xl"
                                     src="https://media.wired.com/photos/6014a6587201ff6c1ba30bcb/master/pass/Gear-Apple-Airpods-Max-Angle-SOURCE-Apple.jpg">
+
                             </div>
                         </div>
                     </section>
@@ -119,21 +122,36 @@
     </Teleport>
 </template>
 
-<script setup>
+<script>
 import { useModalStore } from '@/stores/modalStore';
+import { useProductStore } from '@/stores/productStore';
+
 import { ref } from 'vue';
 
+export default {
 
-let review = ref(false);
+    setup() {
 
-let specifications = ref({
-    color: "Black",
-    weight: "250g",
-    batteryLife: "30 hours",
-    connectivity: "Bluetooth 5.0"
-});
 
-const modal = useModalStore();
+        const modal = useModalStore();
+        const product = useProductStore();
+        let review = ref(false);
+        let specifications = ref({
+            color: "Black",
+            weight: "250g",
+            batteryLife: "30 hours",
+            connectivity: "Bluetooth 5.0"
+        });
+
+        return {
+            review,
+            specifications,
+            product,
+            modal
+        }
+    },
+
+}
 
 
 </script>
