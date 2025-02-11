@@ -105,7 +105,11 @@ style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-lineca
 
       </transition>
 
+
+
       <Footer />
+
+
     </section>
   </section>
 </template>
@@ -148,7 +152,7 @@ export default {
     return {
 
       siteName: "Sol✤store",
-      loading: true
+      loading: true,
 
     }
   },
