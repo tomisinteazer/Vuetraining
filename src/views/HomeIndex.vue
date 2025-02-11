@@ -45,7 +45,8 @@
                                 class="origin-center scale-100 transition duration-700 motion-safe:group-hover:scale-105">
                                 <foreignObject width="655" height="680"><img alt="" loading="lazy" width="2400"
                                         height="3000" decoding="async" data-nimg="1"
-                                        class="w-full bg-neutral-100 object-cover grayscale delay-200  transition duration-700 ease-in-out hover:grayscale-0"
+                                        class="w-full bg-neutral-100 object-cover  "
+                                        :class="['delay-200', 'transition', 'duration-700', 'ease-in-out']"
                                         sizes="(min-width: 1024px) 41rem, 31rem" srcset=""
                                         src="/src/assets/img/porsche.jpeg"
                                         style="color: transparent; aspect-ratio: 655 / 680;"></foreignObject>
@@ -217,7 +218,7 @@
                                             sizes="(min-width: 1024px) 41rem, 31rem"
                                             src="https://cdn.motor1.com/images/mgl/g40OZP/s1/1x1/2015-porsche-918-spyder.webp"
                                             alt="https://all-andorra.com/wp-content/uploads/2019/07/Porsche-991-GT3-RS-white.jpg"
-                                            style="color: transparent; aspect-ratio: 719 / 680; transform: scaleX(-1);">
+                                            style="color: transparent; aspect-ratio: 719 / 680; ">
                                     </foreignObject>
                                 </g>
                                 <use href="#:S3:-shape" stroke-width="2" class="stroke-neutral-950/10"></use>
