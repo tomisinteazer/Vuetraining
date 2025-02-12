@@ -39,17 +39,20 @@
 
 
                     <svg viewBox="0 0 655 680" fill="none"
-                        class="h-full object-cover wiggler object-center rounded scale-120">
+                        class="h-full object-cover wiggler object-center rounded lg:scale-110">
                         <g clip-path="url(#:S1:-clip)" class="group">
                             <g
                                 class="origin-center scale-100 transition duration-700 motion-safe:group-hover:scale-105">
+
                                 <foreignObject width="655" height="680"><img alt="" loading="lazy" width="2400"
                                         height="3000" decoding="async" data-nimg="1"
-                                        class="w-full bg-neutral-100 object-cover  "
+                                        class="w-full bg-neutral-100 object-cover"
                                         :class="['delay-200', 'transition', 'duration-700', 'ease-in-out']"
                                         sizes="(min-width: 1024px) 41rem, 31rem" srcset=""
                                         src="/src/assets/img/porsche.jpeg"
-                                        style="color: transparent; aspect-ratio: 655 / 680;"></foreignObject>
+                                        style="color: transparent; aspect-ratio: 655 / 680;">
+                                </foreignObject>
+
                             </g>
                             <use href="#:S1:-shape" stroke-width="2" class="stroke-neutral-950/10"></use>
                         </g>
