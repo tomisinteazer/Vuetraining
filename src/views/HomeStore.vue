@@ -23,13 +23,15 @@
             </div>
         </section>
 
+
+
         <section class="text-zinc-300 bg-zinc-950 body-font my-12">
             <div class="container p-4 border rounded-xl border-zinc-700 mx-auto">
                 <h1 class="py-8 lg:text-3xl text-xl   px-4 rounded-xl  bg-zinc-900  font-thin">
                     [ Products ◉ Goods ◉ Services ]
                 </h1>
                 <div class="flex flex-wrap ">
-                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="(item, index) in goods.products" :key="item">
+                    <div class="lg:w-1/4 md:w-1/2 p-4 w-full" v-for="(item, index) in goods.products" :key="index">
                         <a class="block relative h-48 rounded overflow-hidden">
                             <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                                 @click="loadModal()" :src="item.image" />
@@ -44,9 +46,19 @@
                             <p class="mt-1">${{ item.price }}</p>
                         </div>
 
-                        <button class="bg-green-600 px-8 py-2 text-black rounded my-4 font-bold"
-                            @click="store.addToCart(item)">Buy</button>
+                        <button
+                            class="hover:bg-green-600  border border-zinc-500  hover:border-black hover:text-black px-8 py-2 w-1/2 text-white rounded my-4 active:scale-60 active:bg-white font-bold hover:w-full transition-all duration-500 ease-in-out "
+                            @click="store.addItem({ ...item, id: index })">
+
+                            <span>Add to cart</span>
+
+
+
+                        </button>
+
                     </div>
+
+
 
                 </div>
 
@@ -59,6 +71,7 @@
 
 
 
+                <!-- <Ripplebutton> well hello there</Ripplebutton> -->
             </div>
 
 
@@ -66,7 +79,7 @@
 
         </section>
 
-        <section class="text-zinc-100  body-font ">
+        <!-- <section class="text-zinc-100  body-font ">
             <div class="container p-4 mx-auto border border-zinc-700 rounded-xl ">
 
                 <h1 class="py-8 lg:text-3xl text-xl   px-4 rounded-xl  bg-zinc-900  font-thin">
@@ -141,7 +154,7 @@
 
 
 
-        </section>
+        </section> -->
 
         <Modal />
 
@@ -156,8 +169,11 @@ import Modal from '../components/Modal.vue';
 import { useCartStore } from '@/stores/cart';
 import { useProductsStore } from '@/stores/products';
 import { useProductStore } from '@/stores/productStore';
+import Ripplebutton from '@/components/Ripplebutton.vue';
 
 export default {
+
+
     data() {
         return {
 
@@ -170,12 +186,14 @@ export default {
             cart: [],
             modal: useModalStore(),
             review: false,
-            isOpen: true
+            isOpen: true,
+            ripples: []
         };
     },
 
     components: {
-        Modal
+        Modal,
+        Ripplebutton
     },
     computed: {
         isModalVisible() {
@@ -183,6 +201,21 @@ export default {
         }
     },
     methods: {
+
+        createRipple(event) {
+            const button = event.currentTarget;
+            const rect = button.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const x = event.clientX - rect.left - size / 2;
+            const y = event.clientY - rect.top - size / 2;
+            const id = Date.now();
+
+            this.ripples.push({ id, x, y, size });
+
+            setTimeout(() => {
+                this.ripples = this.ripples.filter(r => r.id !== id);
+            }, 600);
+        },
         onToggle() {
             this.isOpen = !this.isOpen;
         },
@@ -195,4 +228,22 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+@keyframes ripple {
+    from {
+        transform: scale(0);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.animate-ripple {
+    position: absolute;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+}
+</style>

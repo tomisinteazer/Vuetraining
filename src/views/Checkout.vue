@@ -7,7 +7,7 @@
                     [ Clear your Cart. ]
                 </h1>
                 <div class="flex flex-wrap  ">
-                    <div class="lg:w-3/12 md:w-1/2 w-full px-2 my-4" v-for="(item, index) in store.cart" :key="item">
+                    <div class="lg:w-3/12 md:w-1/2 w-full px-2 my-4" v-for="(item, index) in store.cart" :key="item.id">
 
 
                         <div class="bg-zinc-900 p-4 rounded-lg">
@@ -23,16 +23,29 @@
                                 </h2>
                                 <span class=" ">${{ item.price }}</span>
 
-                                <button class="bg-rose-800  p-4 text-white font-light rounded-full "
-                                    @click="store.remove(index)">
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                        stroke-linejoin="round">
-                                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                                    </svg></button>
 
+                            </div>
+                            <div class="mt-4 flex  items-center">
+
+                                <button class="bg-green-800  py-2 px-6 text-white rounded  text-2xl  font-black mr-2"
+                                    @click="store.addItem(item)">
+                                    +
+                                </button>
+
+
+                                <span class=" ">{{ item.quantity }}</span>
+
+                                <button class="bg-rose-800  py-2 px-6 text-white font-black text-2xl  rounded  mx-2"
+                                    @click="store.removeOneItem(item.id)">
+                                    −
+                                </button>
+
+                            </div>
+
+                            <div>
+                                <button class="w-full bg-black py-4 mt-2 rounded-sm" @click="store.removeItem(item.id)">
+                                    Remove Item</button>
                             </div>
                         </div>
 
@@ -47,7 +60,7 @@
                     <p> Checkout ✤&nbsp</p>
                     <p>
                         [
-                        ${{ store.total }}
+                        ${{ store.totalPrice }}
                         ]
                     </p>
                 </div>
