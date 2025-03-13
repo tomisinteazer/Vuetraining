@@ -1,7 +1,66 @@
 <template>
-    <section>
+    <section class="flex md:flex-row flex-col container mx-auto ">
 
 
+        <section class="md:w-3/4 w-full px-2">
+            <div class="space-y-10 text-white rounded-lg p-5 border border-zinc-700">
+
+                <h1 class="py-8 lg:text-3xl text-xl px-4 rounded-xl bg-zinc-900 font-thin">
+                    <p> Checkout ✤&nbsp</p>
+                    <p> Total : [
+                        ${{ store.totalPrice }}
+                        ]
+                    </p>
+                </h1>
+
+
+                <div class="space-y-5">
+                    <p
+                        class="MuiTypography-root MuiTypography-body1 text-sm font-semibold tracking-wider uppercase text-primary css-1vbkxh1">
+                        Billing details</p>
+                    <div class="grid gap-5 md:grid-cols-2">
+                        <div class="space-y-[5px]"><label
+                                class="text-sm font-semibold tracking-wide capitalize">name</label><input type="text"
+                                class="block w-full p-3 border-zinc-500 rounded-lg focus:outline-green-600 focus:outline-1 border "
+                                placeholder="Delasi Mensah"></div>
+                        <div class="space-y-[5px]"><label class="text-sm font-semibold tracking-wide capitalize">email
+                                address</label><input type="email"
+                                class="block w-full p-3 border-zinc-500 rounded-lg focus:outline-green-600 focus:outline-1 border"
+                                placeholder="delasi@mail.com"></div>
+                        <div class="space-y-[5px]"><label class="text-sm font-semibold tracking-wide capitalize">phone
+                                number</label><input type="tel"
+                                class="block w-full p-3 border-zinc-500 rounded-lg focus:outline-green-600 focus:outline-1 border"
+                                placeholder="+1 202-555-0136"></div>
+                    </div>
+                </div>
+                <div class="space-y-5">
+                    <p
+                        class="MuiTypography-root MuiTypography-body1 text-sm font-semibold tracking-wider uppercase text-primary css-1vbkxh1">
+                        Shipping info</p>
+                    <div class="space-y-[5px]"><label
+                            class="text-sm font-semibold tracking-wide capitalize">address</label><input type="text"
+                            class="block w-full p-3 border-zinc-500 rounded-lg focus:outline-green-600 focus:outline-1 border"
+                            placeholder="1137 Williams Avenue"></div>
+                    <div class="grid gap-5 md:grid-cols-2">
+                        <div class="space-y-[5px]"><label class="text-sm font-semibold tracking-wide capitalize">ZIP
+                                Code</label><input type="number"
+                                class="block w-full p-3 border-zinc-500 rounded-lg focus:outline-green-600 focus:outline-1 border"
+                                placeholder="10001"></div>
+                        <div class="space-y-[5px]"><label
+                                class="text-sm font-semibold tracking-wide capitalize">city</label><input type="text"
+                                class="block w-full p-3 border-zinc-500 rounded-lg focus:outline-green-600 focus:outline-1 border"
+                                placeholder="New York"></div>
+                        <div class="space-y-[5px]"><label
+                                class="text-sm font-semibold tracking-wide capitalize">country</label><input type="text"
+                                class="block w-full p-3 border-zinc-500 rounded-lg focus:outline-green-600 focus:outline-1 border"
+                                placeholder="United States"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 
         <section class="text-zinc-400 body-font relative">
             <div class="container px-5 py-24 mx-auto">
                 <div class="flex flex-col text-center w-full mb-12">
@@ -76,19 +135,19 @@
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="text-zinc-100  body-font my-12 ">
+        </section> -->
+        <section class="text-zinc-100  body-font md:w-1/4 w-full px-2">
             <div class="container p-4 mx-auto border border-zinc-700 rounded-xl ">
 
-                <h1 class="py-8 lg:text-3xl text-xl   px-4 rounded-xl  bg-green-900/20  font-thin">
+                <h1 class="py-4 lg:text-xl text-xl   px-4 rounded-xl  bg-green-900/20  font-thin">
                     [ Clear your Cart. ]
                 </h1>
                 <div class="flex flex-wrap  ">
-                    <div class="lg:w-3/12 md:w-1/2 w-full px-2 my-4" v-for="(item, index) in store.cart" :key="item.id">
+                    <div class="w-full px-2 my-4" v-for="(item, index) in store.cart" :key="item.id">
 
 
                         <div class="bg-zinc-900 p-4 rounded-lg">
-                            <a class="block relative h-48 rounded overflow-hidden">
+                            <a class="block relative h-24 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block"
                                     :src="item.image" />
                             </a>
@@ -118,10 +177,9 @@
                                     −
                                 </button>
 
-                            </div>
 
-                            <div>
-                                <button class="w-full bg-black py-4 mt-2 rounded-sm" @click="store.removeItem(item.id)">
+                                <button class="w-full bg-black py-3 border border-red-700  rounded-sm"
+                                    @click="store.removeItem(item.id)">
                                     Remove Item</button>
                             </div>
                         </div>
@@ -131,16 +189,7 @@
 
                 </div>
 
-                <div
-                    class="lg:flex 
-                    justify-betweeen  text-white lg:text-4xl text-2xl bg-green-600/50 p-4 text-center rounded font-thin lg:w-1/3 w-full my-4">
-                    <p> Checkout ✤&nbsp</p>
-                    <p>
-                        [
-                        ${{ store.totalPrice }}
-                        ]
-                    </p>
-                </div>
+
 
             </div>
 
