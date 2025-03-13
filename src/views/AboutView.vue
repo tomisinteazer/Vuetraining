@@ -8,7 +8,7 @@
       </div>
       <div class="relative px-6">
         <h1 class="text-5xl md:text-6xl my-2 font-bold text-green-500 animate-fade-up">
-          The Future of Car Buying
+          The Future of Ecommerce
         </h1>
         <p class="text-lg text-zinc-300 mb-12 animate-fade-up delay-200">
           AI-Driven Listings & Blockchain Transactions for Secure and Seamless Purchases
