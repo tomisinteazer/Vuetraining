@@ -47,7 +47,7 @@
                         </div>
 
                         <button
-                            class="hover:bg-green-600  border border-zinc-500  hover:border-black hover:text-black px-8 py-2 w-1/2 text-white rounded my-4 active:scale-75 active:bg-transparent font-bold hover:w-full transition-all duration-500 ease-in-out "
+                            class="hover:bg-green-600  border border-zinc-500  hover:border-black hover:text-black px-8 py-2 w-1/2 text-white rounded my-4 active:scale-75 active:bg-transparent font-bold hover:w-full transition-all duration-200 ease-in-out "
                             @click="store.addItem({ ...item, id: item.id ? item.id : index })">
 
                             <span>Add to cart</span>
