@@ -13,10 +13,11 @@
         <p class="text-lg text-zinc-300 mb-12 animate-fade-up delay-200">
           AI-Driven Listings & Blockchain Transactions for Secure and Seamless Purchases
         </p>
-        <a class="px-8 py-4 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-600 transition animate-fade-up delay-400"
+        <button
+          class="px-8 py-4 bg-green-500 text-black font-semibold rounded-lg hover:bg-green-600 transition animate-fade-up delay-400"
           href="#features">
           Explore Our Marketplace
-        </a>
+        </button>
       </div>
     </div>
 

@@ -7,14 +7,14 @@
                 <div class="bg-zinc-900 rounded mx-auto flex flex-wrap p-2 flex-col md:flex-row items-center">
                     <router-link to="/" class="flex title-font font-medium items-center text-white mb-4 md:mb-0  px-4">
                         <span class=" text-green-500 font-bold text-2xl p-2 rounded-lg">{{ title.toUpperCase()
-                            }}</span>
+                        }}</span>
 
                     </router-link>
                     <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                         <!-- <router-link to="/" class="mr-5 hover:text-white">Home </router-link> -->
                         <router-link to="/store" class="mr-5 hover:text-white">Store</router-link>
                         <router-link to="/about" class="mr-5 hover:text-white">About</router-link>
-                        <router-link to="/users" class="mr-5 hover:text-white">Users</router-link>
+                        <router-link to="/users" class="mr-5 hover:text-white">Team</router-link>
                     </nav>
 
                     <div class="flex md:hidden"><button type="button"
