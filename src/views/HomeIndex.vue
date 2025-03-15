@@ -2,7 +2,7 @@
     <section class="">
         <section class="text-zinc-700  my-4  body-font">
             <div
-                class="container mx-auto bg-gradient-to-br from-green-200 from-18% via-green-600 via-75% to-green-800 to-100%  rounded-3xl flex px-5 py-24 md:flex-row flex-col  justify-evenly items-center">
+                class=" h-[80vh] container mx-auto bg-gradient-to-br from-green-200 from-18% via-green-600 via-75% to-green-800 to-100%  rounded-3xl flex px-5 py-24 md:flex-row flex-col  justify-evenly items-center">
                 <div
                     class=" md:w-1/2  flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
                     <h1
