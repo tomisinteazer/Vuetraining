@@ -149,13 +149,13 @@
                         <div class="bg-zinc-900 p-4 rounded-lg">
                             <a class="block relative h-24 rounded overflow-hidden">
                                 <img alt="ecommerce" class="object-cover object-center w-full h-full block"
-                                    :src="item.image" />
+                                    :src="item.images.main" />
                             </a>
 
                             <div class="mt-4 flex justify-between items-center">
 
                                 <h2 class=" title-font text-lg font-medium">
-                                    {{ item.name }}
+                                    {{ item.make + ' ' + item.model + ' ' + item.year }}
                                 </h2>
                                 <span class=" ">${{ item.price }}</span>
 
