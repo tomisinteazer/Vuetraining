@@ -17,11 +17,12 @@ export let useProductsStore = defineStore("productsStore", {
                     console.log('Failed to fetch users.', data);
                 }
                 finalData = await response.json();
+                
             } catch (error) {
                 console.error("the error is ",error.message)
 
             } finally {
-             this.products =finalData.goods
+             this.products = finalData.goods
              this.loading = false
          
             }
