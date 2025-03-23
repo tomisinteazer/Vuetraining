@@ -10,9 +10,23 @@
                 <Transition name="scale">
 
 
+
+
                     <section class="text-zinc-400 body-font p-8  max-h-[95vh] overflow-y-auto">
-                        <div class="container bg-zinc-950 lg:w-4/5 rounded-3xl p-4 mx-auto">
-                            <div class="p-5 rounded-xl border border-zinc-600 flex flex-wrap">
+
+                        <section
+                            class=" lg:text-2xl text-xl mx-auto container my-4  flex lg:w-4/5 font-thin flex-row-reverse ">
+                            <button
+                                class=" p-3 text-white bg-red-800 border border-zinc-400 rounded-xl hover:bg-red-600 hover:scale-110"
+                                @click="modal.closeModal">[ x
+                                ]</button>
+                        </section>
+
+
+                        <div class="container bg-zinc-950 lg:w-4/5 rounded-3xl p-4 mx-auto border border-zinc-600">
+
+                            <div class="p-5 rounded-xl  flex flex-wrap">
+
                                 <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
                                     <h2 class="text-sm title-font text-zinc-500 tracking-widest">{{
                                         product.product.brand }}</h2>
@@ -76,7 +90,7 @@
                                             <span class="ml-auto text-white">Blue</span>
                                         </div>
                                         <div class="flex border-t border-zinc-800 py-2"
-                                            v-for=" (value, key) in product.product.specifications" :key="value">
+                                            v-for="(value, key) in product.product.specifications" :key="value">
                                             <span class="text-zinc-500">{{ key }}</span>
                                             <span class="ml-auto text-white">{{ value }}</span>
                                         </div>
@@ -93,7 +107,7 @@
                                             <button
                                                 class="flex ml-auto text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Add
                                                 to Cart</button>
-                                            <button @click="modal.closeModal"
+                                            <button
                                                 class="rounded-full w-10 h-10 bg-zinc-800 p-0 border-0 inline-flex items-center justify-center  text-zinc-500 ml-4">
                                                 <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                                     stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
